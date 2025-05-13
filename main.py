@@ -35,5 +35,3 @@ if st.button("Generate"):
             tweets = tweet_chain.invoke({"number": number, "topic": topic})
             st.success("Here are your sentences:")
             st.write(tweets.content)
-
-

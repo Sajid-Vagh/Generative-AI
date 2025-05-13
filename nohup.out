@@ -1,0 +1,92 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8503
+  Network URL: http://192.168.1.103:8503
+
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/sajidhasan/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/[0m [31m [0m
+[31m [0m [1mexec_code.py[0m:121 in exec_func_with_error_handling                                    [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/sajidhasan/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/[0m [31m [0m
+[31m [0m [1mscript_runner.py[0m:648 in code_to_exec                                                 [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/sajidhasan/Desktop/ai practice/[0m[1mlang_gen.py[0m:14 in <module>                      [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m11 [0m[94mfrom[0m[90m [0m[4;96mlangchain_core[0m[4;96m.[0m[4;96mprompts[0m[90m [0m[94mimport[0m PromptTemplate                               [31m [0m
+[31m [0m   [2m12 [0m                                                                                [31m [0m
+[31m [0m   [2m13 [0m[2m# For LLaMA (e.g., Falcon or LLaMA2)[0m                                            [31m [0m
+[31m [0m [31m❱ [0m14 [94mfrom[0m[90m [0m[4;96mtransformers[0m[90m [0m[94mimport[0m AutoModelForCausalLM, AutoTokenizer                    [31m [0m
+[31m [0m   [2m15 [0m[94mimport[0m[90m [0m[4;96mtorch[0m                                                                    [31m [0m
+[31m [0m   [2m16 [0m                                                                                [31m [0m
+[31m [0m   [2m17 [0mst.title([33m"[0m[33mText Generator with LLaMA and Gemini[0m[33m"[0m)                                [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mImportError: [0mcannot import name [32m'AutoModelForCausalLM'[0m from [32m'transformers'[0m 
+[1m([0m[35m/home/sajidhasan/.local/lib/python3.10/site-packages/transformers/[0m[95m__init__.py[0m[1m)[0m
+2025-05-12 16:07:46.068 Examining the path of torch.classes raised:
+Traceback (most recent call last):
+  File "/home/sajidhasan/.local/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sajidhasan/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 217, in get_module_paths
+    potential_paths = extract_paths(module)
+  File "/home/sajidhasan/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 210, in <lambda>
+    lambda m: list(m.__path__._path),
+  File "/home/sajidhasan/.local/lib/python3.10/site-packages/torch/_classes.py", line 13, in __getattr__
+    proxy = torch._C._get_custom_class_python_wrapper(self.name, attr)
+RuntimeError: Tried to instantiate class '__path__._path', but it does not exist! Ensure that it is registered via torch::class_
+2025-05-12 16:07:46.687 Examining the path of torch.classes raised:
+Traceback (most recent call last):
+  File "/home/sajidhasan/.local/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sajidhasan/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 217, in get_module_paths
+    potential_paths = extract_paths(module)
+  File "/home/sajidhasan/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 210, in <lambda>
+    lambda m: list(m.__path__._path),
+  File "/home/sajidhasan/.local/lib/python3.10/site-packages/torch/_classes.py", line 13, in __getattr__
+    proxy = torch._C._get_custom_class_python_wrapper(self.name, attr)
+RuntimeError: Tried to instantiate class '__path__._path', but it does not exist! Ensure that it is registered via torch::class_
+2025-05-12 16:07:51.640 Examining the path of torch.classes raised:
+Traceback (most recent call last):
+  File "/home/sajidhasan/.local/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sajidhasan/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 217, in get_module_paths
+    potential_paths = extract_paths(module)
+  File "/home/sajidhasan/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 210, in <lambda>
+    lambda m: list(m.__path__._path),
+  File "/home/sajidhasan/.local/lib/python3.10/site-packages/torch/_classes.py", line 13, in __getattr__
+    proxy = torch._C._get_custom_class_python_wrapper(self.name, attr)
+RuntimeError: Tried to instantiate class '__path__._path', but it does not exist! Ensure that it is registered via torch::class_
+2025-05-12 16:08:08.856 Examining the path of torch.classes raised:
+Traceback (most recent call last):
+  File "/home/sajidhasan/.local/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sajidhasan/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 217, in get_module_paths
+    potential_paths = extract_paths(module)
+  File "/home/sajidhasan/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 210, in <lambda>
+    lambda m: list(m.__path__._path),
+  File "/home/sajidhasan/.local/lib/python3.10/site-packages/torch/_classes.py", line 13, in __getattr__
+    proxy = torch._C._get_custom_class_python_wrapper(self.name, attr)
+RuntimeError: Tried to instantiate class '__path__._path', but it does not exist! Ensure that it is registered via torch::class_
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Error while downloading from https://cdn-lfs.hf.co/repos/fb/9d/fb9d2cbe2e913461ae463cd35cb5a43ad1c5115ba9e913382f147e2f1ea66f3d/d68a175bf005c2dd7fdd9956227b5691802c8d5a5b03897ed107e591017b33ea?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00002-of-00002.safetensors%3B+filename%3D%22model-00002-of-00002.safetensors%22%3B&Expires=1747050017&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0NzA1MDAxN319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9yZXBvcy9mYi85ZC9mYjlkMmNiZTJlOTEzNDYxYWU0NjNjZDM1Y2I1YTQzYWQxYzUxMTViYTllOTEzMzgyZjE0N2UyZjFlYTY2ZjNkL2Q2OGExNzViZjAwNWMyZGQ3ZmRkOTk1NjIyN2I1NjkxODAyYzhkNWE1YjAzODk3ZWQxMDdlNTkxMDE3YjMzZWE%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=ORaB0jSFjyKdwsw3Du3KXP6wLbwtH-D3u%7E4ao1ELQJ13rNfh%7EmeonB66uB1ySDUDbX5XwduFVyTVoZhk1Z-7SzMMuKac7RZ2P7QUCSXOlb4Y39rSGmO8oeDNAP7L9RXKILPW%7EmJwvq2bugn6lsCo3hxuVySOFHpaREwUIJcKPB7vT944PfAKtErBpeQ19uZHuzXUya75YfLlix4yZk344ktpQeDjJ4klaC-0wChcmopVyH3KqrVXYYRVkQn7NNFApT0ZYZWzv5k%7EpxKnrOJpFrl6OrrZhhdXA48E7PdyqlpWoe3FSazOumwEA9OCP8TN3ZxESPDTa-IuEJjD9i1jyw__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+                                                                                                                                                                                                                                    
